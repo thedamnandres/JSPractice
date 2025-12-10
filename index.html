@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing with CSS Variables and JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Update CSS Variables with <span class="hl">JS</span></h2>
+
+<div class="image-container">
+  <img src="https://512pixels.net/wp-content/uploads/2025/07/26-Tahoe-Day.jpg" alt="Tahoe landscape">
+</div>
+
+<div class="controls">
+  <div class="control-group">
+    <label for="spacing">Spacing</label>
+    <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    <span class="value" id="spacing-value">10px</span>
+  </div>
+
+  <div class="control-group">
+    <label for="blur">Blur</label>
+    <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+    <span class="value" id="blur-value">10px</span>
+  </div>
+
+  <div class="control-group">
+    <label for="brightness">Brightness</label>
+    <input type="range" name="brightness" min="50" max="150" value="100" data-sizing="%">
+    <span class="value" id="brightness-value">100%</span>
+  </div>
+
+  <div class="control-group">
+    <label for="saturate">Saturation</label>
+    <input type="range" name="saturate" min="0" max="200" value="100" data-sizing="%">
+    <span class="value" id="saturate-value">100%</span>
+  </div>
+
+  <div class="control-group color-control">
+    <label for="base">Base Color</label>
+    <input type="color" name="base" value="#ffc600">
+  </div>
+
+  <button id="reset">Reset All</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
